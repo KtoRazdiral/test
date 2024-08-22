@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.Obsch{
+    background-color: #1a1a1a;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cargo {
+    color: #79c0a1; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #8f8f8f;
+}
+
+.button {
+    background-color: #ff7f30; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #dfab89;
+}
