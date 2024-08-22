@@ -2,22 +2,29 @@ body {
     margin: 0;
     
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #c6c6c9;
 }
 
 .Obsch{
-    background-color: #1a1a1a;
-    padding-left: 10%;
-    padding-right: 10%;
+    background-color: #282B38;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.Centr{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 header {
-    width: 100%;
+    width: 68%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: #1a1a1a;
-    padding: 15px 30px;
+    background-color: #282B38;
+    padding: 1% 1%;
     color: white;
 }
 
@@ -26,16 +33,20 @@ header {
     font-weight: bold;
 }
 
-.cargo {
-    color: #79c0a1; 
+nav {
+    width: 70%;  
 }
 
 nav ul {
     list-style: none;
+    width: auto;
+    height: auto;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
 }
 
 nav a {
@@ -48,12 +59,13 @@ nav a:hover {
     color: #8f8f8f;
 }
 
+
+
 .button {
-    background-color: #ff7f30; 
-    padding: 10px 20px;
-    border-radius: 5px;
+    background-color: #E58D35; 
+    padding: 1.5% 3%;
+    border-radius: 90px;
     color: white;
-    font-weight: bold;
 }
 
 .button:hover {
