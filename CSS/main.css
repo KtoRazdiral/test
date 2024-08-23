@@ -3,6 +3,10 @@ body {
     background-color: #c6c6c9;
 }
 
+.container-width{
+    width: 100%;
+}
+
 .container{
     position: relative;
     background-color: #282B38;
@@ -11,24 +15,20 @@ body {
 }
 
 
-header {
+.shapka {
     margin: 0 auto;
     width: 68%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #282B38;
-    padding: 1% 1%;
-    color: #fff;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+    padding: 20px 20px;
+    color: #FFFFFF;
 }
 
 .list {
-    min-width: 570px;
+    min-width: 600px;
+    margin: 0% 5% 0% 5%;
 }
 
 .list ul {
@@ -43,8 +43,9 @@ header {
 
 .list a {
     text-decoration: none;
-    color: #fff;
+    color: #FFFFFF;
     transition: color 0.3s;
+    font-size: 16px
 }
 
 .list a:hover {
@@ -53,14 +54,21 @@ header {
 
 
 
-.button {
+.button-shapka {
+    outline: none;
     background-color: #E58D35; 
-    padding: 1.5% 3%;
+    padding: 16px 30px;
     border-radius: 90px;
-    color: #fff;
+    border: none;
+    color: #FFFFFF;
     white-space: nowrap;
+    cursor: pointer;
 }
 
-.button:hover {
+.button-shapka a {
+    font-size: 15px
+}
+
+.button-shapka:hover {
     background-color: #dfab89;
 }
