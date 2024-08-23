@@ -1,31 +1,25 @@
 body {
     margin: 0;
-    
-    font-family: Arial, sans-serif;
     background-color: #c6c6c9;
 }
 
-.Obsch{
+.container{
+    position: relative;
     background-color: #282B38;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.Centr{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
 
 header {
+    margin: 0 auto;
     width: 68%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #282B38;
     padding: 1% 1%;
-    color: white;
+    color: #fff;
 }
 
 .logo {
@@ -33,14 +27,12 @@ header {
     font-weight: bold;
 }
 
-nav {
-    width: 70%;  
+.list {
+    min-width: 570px;
 }
 
-nav ul {
+.list ul {
     list-style: none;
-    width: auto;
-    height: auto;
     padding: 0;
     margin: 0;
     display: flex;
@@ -49,13 +41,13 @@ nav ul {
     gap: 6%;
 }
 
-nav a {
+.list a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     transition: color 0.3s;
 }
 
-nav a:hover {
+.list a:hover {
     color: #8f8f8f;
 }
 
@@ -65,7 +57,7 @@ nav a:hover {
     background-color: #E58D35; 
     padding: 1.5% 3%;
     border-radius: 90px;
-    color: white;
+    color: #fff;
     white-space: nowrap;
 }
 
