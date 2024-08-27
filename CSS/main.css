@@ -1,61 +1,79 @@
 body {
     margin: 0;
-    
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #c6c6c9;
 }
 
-.Obsch{
-    background-color: #1a1a1a;
-    padding-left: 10%;
-    padding-right: 10%;
+.container-width{
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #282B38;
 }
 
-header {
-    width: 100%;
+.container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
+    background-color: #282B38;
+}
+
+.content {
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+}
+
+.cap {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: #1a1a1a;
-    padding: 15px 30px;
-    color: white;
+    background-color: #282B38;
+    padding: 20px 10px 20px 10px;
+    color: #FFFFFF;
+    flex-grow: 1;
+}
+.logo{
+    margin-right: 15px;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.cargo {
-    color: #79c0a1; 
-}
-
-nav ul {
+.sublist {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
-nav a {
+.font-sheet {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     transition: color 0.3s;
+    font-size: 16px;
+    white-space: nowrap;
 }
 
-nav a:hover {
+.font-sheet:hover {
     color: #8f8f8f;
 }
 
-.button {
-    background-color: #ff7f30; 
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
+
+
+.button-cap {
+    outline: none;
+    background-color: #E58D35; 
+    padding: 16px 30px;
+    border-radius: 90px;
+    border: none;
+    color: #FFFFFF;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-left: 15px;
 }
 
-.button:hover {
+.button-cap {
+    font-size: 15px
+}
+
+.button-cap:hover {
     background-color: #dfab89;
 }
