@@ -63,18 +63,21 @@ body {
 
 .font-sheet:hover {
     color: #8f8f8f;
+
 }
 
 .content-container{
     width: auto;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: #6C7188;
+    background-color: #c6c6c9;
+
 }
 
 .content{
     width: 100%;
     height: 2000px;
+    margin-top: 6%;
 }
 
 .button-cap {
@@ -120,6 +123,10 @@ body {
 
 @media (max-width: 1100px) {
 
+    body.lock{
+        overflow: hidden;
+    }
+
     .header {
         justify-content: space-between;
     }
@@ -148,27 +155,42 @@ body {
         height: 4px;
         border-radius: 10px;
         top: 8px;
+        transition: all .3s, ease .3s; ;
     }
 
     .burger-menu {
         position: fixed;
-        top: 0;
+        top: -100%;
         left: 0;
         width: 100%;
         height: 100%;
         background-color: #6C7188;
+        transition: all 0.5s ease-out;
+        
     }
 
+    .burger-menu.active {
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        background-color: #6C7188;
+        transition: all 0.5s ease-out;
+    }
+
+
     .burger-content {
+        display: flex;
+        justify-content: center;
         width: 100%;
         height: 100%;
         background-color: #6C7188;
         flex-direction: column;
+        margin-top: 90px;
     }
 
-    .list{
-        margin-top: 70px;
-    }
     
     .sublist {
         list-style: none;
@@ -179,7 +201,12 @@ body {
         align-items: center;
     }
 
+    .font-sheet {
+        font-size: 21px;  
+    }
+
     .button-cap {
+        font-size: 16px;
         margin-left: 0;
         margin-top: 40px;
     }
@@ -193,17 +220,45 @@ body {
         width: 100%;
         height: 4px;
         border-radius: 10px;
+        transition: all .3s, ease .3s;
     }
 
     .burger::before {
         top: 0;
         
-        transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
     }
     .burger::after {
         bottom: 0;
-        transition: bottom .3s .15s, transform .3s;
+        
+    }
+
+    .burger.active span{
+        transform: scale(0);
+        transition: all .3s, ease .3s; ;
+    }
+
+    .burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+        transition: all .3s, ease .3s; 
+    }
+    .burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 7px;
+        transition: all .3s, ease .3s; 
     }
 
     
+}
+
+@media (max-height: 500px) {
+
+    .burger-menu {
+        overflow: auto;
+    }
+
+    .burger-content {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
 }
