@@ -3,7 +3,7 @@ body {
     background-color: #c6c6c9;
 }
 
-.container{
+.container {
     width: 100%;
 }
 
@@ -24,7 +24,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #282B38;
+    background-color: #282b38;
     z-index: 2;
 }
 
@@ -33,13 +33,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #282B38;
+    background-color: #282b38;
     padding: 20px 10px 20px 10px;
-    color: #FFFFFF;
+    color: #ffffff;
     flex-grow: 1;
 }
 
-.logo{
+.logo {
     margin-right: 80px;
     position: relative;
     z-index: 3;
@@ -55,7 +55,7 @@ body {
 
 .font-sheet {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #ffffff;
     transition: color 0.3s;
     font-size: 16px;
     white-space: nowrap;
@@ -66,7 +66,7 @@ body {
 
 }
 
-.content-container{
+.content-container {
     width: auto;
     padding-left: 50px;
     padding-right: 50px;
@@ -74,7 +74,7 @@ body {
 
 }
 
-.content{
+.content {
     width: 100%;
     height: 2000px;
     margin-top: 6%;
@@ -82,11 +82,11 @@ body {
 
 .button-cap {
     outline: none;
-    background-color: #E58D35; 
+    background-color: #e58d35; 
     padding: 16px 30px;
     border-radius: 90px;
     border: none;
-    color: #FFFFFF;
+    color: #ffffff;
     white-space: nowrap;
     cursor: pointer;
     margin-left: 80px;
@@ -100,22 +100,22 @@ body {
     background-color: #dfab89;
 }
 
-.burger-menu{
+.burger-menu {
     display: flex;
     justify-content: center;
     align-items: center;   
 }
 
-.burger-content{
+.burger-content {
     display: flex;
     justify-content: center;
     align-items: center;   
 }
-.list{
+.list {
     position: relative;
     z-index: 2;
 }
-.burger{
+.burger {
     display: none;
 }
 
@@ -123,7 +123,7 @@ body {
 
 @media (max-width: 1100px) {
 
-    body.lock{
+    body.lock {
         overflow: hidden;
     }
 
@@ -131,12 +131,12 @@ body {
         justify-content: space-between;
     }
 
-    .logo{
+    .logo { 
         
         margin-left: 20px;
     }
 
-    .burger{
+    .burger {
         display: block;
         position: relative;
         width: 30px;
@@ -150,7 +150,7 @@ body {
         content: '';
         left: 0;
         position: absolute;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         width: 100%;
         height: 4px;
         border-radius: 10px;
@@ -176,7 +176,7 @@ body {
         left: 0;
         width: 100%;
         height: 500px;
-        background-color: #6C7188;
+        background-color: #6c7188;
         transition: all 0.5s ease-out;
     }
 
@@ -186,7 +186,7 @@ body {
         justify-content: center;
         width: 100%;
         height: 100%;
-        background-color: #6C7188;
+        background-color: #6c7188;
         flex-direction: column;
         margin-top: 90px;
     }
@@ -216,7 +216,7 @@ body {
         content: '';
         left: 0;
         position: absolute;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         width: 100%;
         height: 4px;
         border-radius: 10px;
@@ -232,7 +232,7 @@ body {
         
     }
 
-    .burger.active span{
+    .burger.active span {
         transform: scale(0);
         transition: all .3s, ease .3s; ;
     }
