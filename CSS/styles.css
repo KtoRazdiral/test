@@ -9,8 +9,14 @@
     src: url("/FONTS/proximanova_black.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
-  } 
+  }
+  @font-face { 
+    font-family: "LightRegular"; 
+    src: url("/FONTS/proximanova_light.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  }  
 
   a, .button, .logo {
     font-family: "ProRegular", sans-serif;
-}
+  }
